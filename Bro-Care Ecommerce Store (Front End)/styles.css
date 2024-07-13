@@ -1,0 +1,893 @@
+/*Font import sect*/
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Section*/
+
+.header-sect {
+  border-bottom: 1px solid#E2E8F0;
+  padding-inline: 2rem;
+}
+
+.logo h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+
+li {
+  list-style: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 20px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: flex;
+  padding-block: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+    margin-right: 3rem;
+    font-weight: 400;
+}
+
+.nav-item :hover {
+  color: #97704f;
+  transition: 0.5s;
+}
+
+.nav-links {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #101010;
+  text-decoration: none;
+}
+
+span {
+  color: #97704f;
+}
+
+.intro-banner {
+  background-image: url(Assets/freshbanner.jpg);
+  background-attachment: fixed;
+  height: 85vh;
+  padding: 5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-width: 100%;
+}
+
+.intro-text {
+  position: absolute;
+  top: 41%;
+  padding: 0rem;
+  color: #e2e8f0;
+}
+
+.intro-banner .intro-header {
+  font-family: "Lato", serif;
+  font-size: 3rem;
+
+  font-weight: 500;
+}
+
+.intro-p {
+  margin-top: 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.catalogue-sect {
+  min-width: 100%;
+  background-color: #101010;
+  padding: 3rem;
+  max-height: auto;
+}
+
+.catalogoue-p {
+  color: #e2e8f0;
+  padding: 12px 20px;
+  margin-left: 5rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.catalogoue-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-basis: 100;
+  gap: 20px;
+}
+
+.category-description {
+  font-family: "Lato", sans-serif;
+  color: #97704f;
+  margin-left: 13px;
+  font-weight: 400;
+}
+
+.catimg {
+  padding: 20px 12px;
+  height: 200px;
+  width: 250px;
+  cursor: pointer;
+}
+
+.catimg:hover {
+  transition: all 0.3ms ease-in;
+  border-radius: 9px;
+  transform: translateY(-4px);
+}
+
+/*Catalouge*/
+.haircare-sect {
+  background-color: #edeef0;
+  height: auto;
+}
+ 
+.product-img {
+  height: 235px;
+  width: 229px;
+  border-radius: 9px;
+}
+
+.product-img:hover {
+  transition: all 0.3ms ease-in;
+  /* box-shadow: 0 10px 27px rgba(151, 111, 79, 0.767);*/
+  border-radius: 9px;
+  transform: translateY(-4px);
+}
+
+.product-items {
+  padding: 10px;
+}
+
+.product-p-text {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  padding-top: 50px;
+  margin-left: 5rem;
+  font-weight: 600;
+  color: #97704f;
+}
+
+.product-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  padding-block: 16px;
+}
+
+.product-price {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  color: #97704f;
+}
+.products {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 7rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.grooming-sect {
+  background-color: #edeef0;
+  height: auto;
+  width: 100%;
+}
+
+.jewellery-sect {
+  background-color: #edeef0;
+}
+
+
+
+.FAQs{
+  height: auto;
+  width: 100%;
+  background-color: #edeef0;
+}
+
+.faq-p{
+  font-family: "Lato  ", sans-serif;
+  font-weight: 300;
+  margin-top: 1.5rem;
+  margin-left: 5rem;
+}
+.accordion-container{
+padding: 5rem;
+}
+
+.accordion{
+  display: flex;
+  align-items: center;
+  background-color: #101010;
+  color:#E2E8F0;
+  cursor: pointer;
+  margin-top: 5px;
+  font-family: "Lato  ", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+}
+
+.icon{
+  margin-left: auto;
+}
+
+.answer{
+  border-top: 2px solid #101010;
+  padding: 20px 18px;
+  display: none;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  background-color: #97704f;
+}
+
+.answer p{
+  color: #E2E8F0  ;
+}
+
+.shopping-cart{
+  width: 20px;
+  height: 20px;
+}
+.shopping-cart .cart-icon{
+  height: 20px;
+  cursor: pointer;
+}
+
+.shopping-cart span{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+background-color: #000;
+color:#fff;
+border-radius: 50%;
+-webkit-border-radius:50%;
+-moz-border-radius:50%;
+-ms-border-radius:50%;
+-o-border-radius:50%;
+display:flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: 16px;
+right: 31px;
+padding: 1px 5px;
+}
+
+.shopping-menu {
+  position: absolute;
+  position: fixed;
+  left: 100%;
+  top: 5.2rem;
+  overflow: hidden;
+  right: 0;
+  padding: 41px 17px;
+  transition: 0.5s;
+  margin-right: auto;
+  height: 84vh;
+  text-align: center;
+  z-index: 1000;
+  width: 20%;
+  background-color: #101010;
+}
+
+.cart-container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 11em;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
+.checkout{
+  padding: 12% 0;
+}
+
+.cart-item{
+
+}
+
+.total {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  width: 100%;
+  color: #E2E8F0;
+  border-top: 1px solid;
+  justify-content: space-between;
+}
+
+.cart-h{
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  padding: 0 20px;
+  margin: 0;
+}
+.cart .checkout{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  color: #fff;
+  grid-template-columns: repeat(2,1fr);
+}
+
+
+.cart-text{
+  color: #E2E8F0;
+}
+.quantity{
+  color: #101010;
+}
+
+.footer{
+  background-color: #101010;
+  padding: 2rem 5rem;
+  overflow: hidden;
+}
+
+
+.footer-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.footer-menu {
+  display: flex;
+  margin-inline: auto;
+}
+.footer-item{
+  margin-right: 2rem;
+}
+.footer-item a{
+  color: #E2E8F0;
+}
+
+.Contacts {
+  height: auto;
+  background-color: #edeef0;
+  padding: 4rem 6rem;
+  overflow: overlay;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: black;
+
+}
+
+input{
+  border:1px solid ;
+  border-radius: 1px;
+  padding: 2px;
+  margin-top: 3px;
+}
+
+.social-icons a svg{
+color: #97704f;
+}
+
+.footer-item :hover {
+  color: #97704f;
+  transition: 0.5s;
+}
+
+.email{
+  margin-top: 0.5rem;
+  color:#E2E8F0;
+  font-family: "Roboto",sans-serif;
+}
+
+.email a{
+  text-decoration: none;
+  color:#E2E8F0;
+}
+.social-icons{
+
+}
+
+.social-icons a{
+
+}
+
+.contacts-container{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 2rem;
+  border-radius: 5px;
+  background: #fff;
+  padding: 25px;
+box-shadow: 4px 4px 2px rgb(148, 148, 147);
+  overflow:hidden;
+}
+
+.contact-l{
+  border-right: 1px solid #000;
+}
+
+.contact-h{
+  font-family: "Lato",sans-serif;
+  font-weight: 700;
+  color:#97704f;
+  font-size: 2rem;
+  }
+
+  #fname{
+    font-family: "Roboto",sans-serif;
+   font-weight: 300;
+   font-size: 12px;
+  }
+
+  #lname{
+    font-family: "Roboto",sans-serif;
+   font-weight: 300;
+   font-size: 12px;
+  }
+
+  #emailname{
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+  }
+
+  #message{
+    font-family: "Roboto",sans-serif; 
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .contact-r input[type="text"]{
+    border: 1px solid #97704f;
+    width: 50%;
+    padding: 10px;
+
+  }
+  .contact-r textarea{
+    resize: none;
+    height: 80px;
+    width: 75%;
+    font-size: 14px;
+     border: 1px solid #97704f;
+    margin-top: 6px;
+  }
+  .contact-p{
+    font-family: "Roboto",sans-serif;
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+
+.contact-h2{
+font-family: "Lato",sans-serif;
+font-weight: 700;
+font-size: 1.2rem;
+}
+.submit-b input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #97704f;
+  width: 20%;
+font-weight: 500;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+@media only Screen and (max-width: 768px) {
+
+  .header-sect {
+    padding-inline: 1rem;
+    z-index: 10000;
+    width: 100%;
+    position: fixed;
+      background: white;
+  }
+
+  .navbar {
+    padding: 1rem 3rem;
+}
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 4rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 100;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  
+  .nav-menu.active {
+    left: 0;
+  }
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+.intro-text {
+        position: absolute;
+        top: 37%;
+        padding: 2rem;
+    }
+
+.intro-p {
+  margin-top: 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.intro-banner {
+    padding: 1rem;
+}
+
+
+.intro-banner .intro-header {
+    font-size: 2.1rem;
+}
+
+    .intro-p {
+        margin-top: 10px;
+        font-family: "Lato", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 200;
+    }
+
+  .catalogoue-p {
+    color: #e2e8f0;
+    padding: 12px 21px;
+    margin-left: 0rem;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.catalogoue-items {
+  gap: 0px;
+}
+
+.catimg {
+  padding: 22px 11px;
+  height: 200px;
+  width: 241px;
+}
+
+.category-description {
+  font-size: 1rem;
+}
+
+.product-items {
+  padding: 8px;
+}
+
+.product-text {
+  font-size: 13px;
+}
+
+.product-price {
+  font-size: 1.2rem;
+}
+
+.product-p-text {
+  font-size: 1.7rem;
+}
+
+.product-img {
+  height: 209px;
+  width: 196px;
+}
+
+
+  .shopping-cart {
+    margin-left: 29rem;
+ }
+
+ .submit-b input[type="submit"] {
+  border: 0px;
+  margin-top: 15px;
+  padding: 35px 98px;
+  width: 100%;
+  background-color: #97704f;
+  font-weight: 500;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.contact-r input[type="text"] {
+  border: 1px solid #97704f;
+  width: 62%;
+  padding: 10px;
+}
+
+}
+
+
+  @media only Screen and (max-width: 600px) {
+
+    .intro-banner {
+      background-image: url(Assets/freshbanner_mobile.jpg);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position:center;
+      background-size:cover;
+      width: 100%;
+    }
+
+    
+    .header-sect {
+      border-bottom: 1px solid #e2e8f0;
+      position: fixed;
+      width: 100%;
+      z-index: 10000;
+      background: white;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0rem;
+  }
+
+  .faq-p{
+    font-family: "Lato  ", sans-serif;
+    font-weight: 300;
+    margin-top: 2rem;
+    margin-left: 3rem;
+  }
+
+  .accordion-container{
+    padding: 3rem;
+    }
+
+    .answer{
+      border-top: 2px solid #101010;
+      padding: 20px 15px;
+      display: none;
+      overflow: hidden;
+      font-family: "Roboto", sans-serif;
+      font-size: 1rem;
+      background-color: #97704f;
+    }
+
+    .intro-text {
+      position: absolute;
+      top: 25%;
+      padding: 1.5rem;
+      color: #e2e8f0;
+    }
+
+    .intro-banner .intro-header {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
+.shopping-cart{
+margin-left: 10rem;
+  width: 20px;
+}
+    .intro-p {
+      font-size: 1.3rem;
+      font-weight: 300;
+    }
+
+    .catalogoue-p {
+      padding: 5px 2px;
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+
+    .category-description {
+      font-family: "Lato", sans-serif;
+      color: #97704f;
+      font-size: 1rem;
+      margin-left: 13px;
+      font-weight: 400;
+    }
+
+    .catalogoue-items {
+      gap: 0px;
+    }
+    .catimg {
+      height: 186px;
+      width: 250px;
+      padding: 20px 7px;
+    }
+
+    .product-p-text {
+      font-size: 1.5rem;
+      margin-left: 3rem;
+    }
+
+    .products {
+      padding: 1rem;
+    }
+
+    .product-items {
+      padding: 6px;
+    }
+
+    .product-img {
+      height: 197px;
+      width: 200px;
+      border-radius: 9px;
+    }
+
+    .product-text {
+      font-size: 13px;
+      padding-block: 9px;
+    }
+
+    .product-price {
+      font-size: 1rem;
+    }
+
+ 
+    .footer-menu {
+      display: flex;
+      margin-inline: auto;
+      flex-direction: row;
+  }
+  .email{
+    margin-top: 1rem;
+}
+.footer {
+  padding: 2rem 0rem;
+
+}
+  .footer-container {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact-h {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+    .Contacts {
+        padding: 4rem 3rem;
+        width: 100%;
+    }
+
+.contacts-container {
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  gap: 2rem;
+  padding: 18px 34px;
+  width: 100%;
+  justify-items: center;
+}
+
+.contact-h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.contact-r input[type="text"] {
+        border: 1px solid #97704f;
+        width: 100%;
+        padding: 10px;
+    }
+.submit-b{
+  width: 100%;
+}
+
+
+.contact-r {
+  width: 100%;
+}
+
+.contact-l {
+  border: none;
+  width: 100%;
+}
+
+.contact-p {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  padding: 12px 0;
+}
+
+.contact-r textarea {
+  resize: none;
+  height: 80px;
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid #97704f;
+  margin-top: 6px;
+}
+
+
+  }
+
+
+  @media only Screen and (min-width: 1230px) {
+
+    .navbar {
+      padding: 1rem;
+  }
+
+    .catalogoue-p {
+      margin-left: 1rem;
+  }
+
+  .intro-p {
+    font-size: 1.5rem;
+  }
+
+  .intro-banner .intro-header {
+    font-size: 3rem;
+}
+    .products {
+      padding: 2rem 4rem;
+  }
+
+  }
